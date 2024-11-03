@@ -7,7 +7,7 @@ function App() {
   return (
     <>
 
-     <p>Hello, I am MovieDB</p>
+     <p className='text-[48px] font-[700]'>Hello, I am MovieDB</p>
       
     </>
   )
