@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Header } from './components'
 
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
   return (
     <>
 
-     <p className='text-[48px] font-[700]'>Hello, I am MovieDB</p>
+     <Header/>
       
     </>
   )
