@@ -1,14 +1,31 @@
 import { useState } from 'react'
-import { Header } from './components'
+import { Footer, Header, Listing } from './components'
 
 
 function App() {
 
 
   return (
+    
     <>
 
-     <Header/>
+    <div className='flex flex-col min-h-screen'>
+
+    <Header/>
+
+    <div className='flex flex-grow'>
+
+      <Listing/>
+
+    </div>
+
+    
+
+    <Footer/>
+
+    </div>
+
+     
       
     </>
   )
