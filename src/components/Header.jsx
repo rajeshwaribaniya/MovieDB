@@ -3,19 +3,15 @@ import React from 'react'
 export  function Header() {
   return (
     <>
-        <div className='flex gap-[88px] bg-primary px-[16px] py-[12px] items-center'>
+        <div className='flex justify-between gap-[88px] bg-primary px-[16px] py-[12px] items-center w-full '>
 
             {/* name */}
-            <p className='text-brand-color text-[24px] font-[600]'>MovieDB</p>
+            <p className=' text-brand-color text-[24px] font-[600]'>MovieDB</p>
 
-            {/* Search */}
-            <input 
-            type="text" 
-            placeholder='Search MovieDB'
-            className=' flex flex-grow text-secondary text-[14px] leading-[100%] px-[16px] py-[12px] rounded-[4px] bg-[#FFFFFF]' />
+            
 
             {/* Sign in + create account */}
-            <div className='flex items-center gap-[16px] '>
+            <div className='flex items-center gap-[16px]  '>
 
                 {/* Sign in */}
                 <p className='text-[#FFFFFF] text-[16px] font-[600]'>Sign In</p>
