@@ -13,6 +13,7 @@ export default {
     },
 
     borderColor:{
+      'brand-color': '#F2C00D',
       'primary': '#757575',
     },
     extend: {},
