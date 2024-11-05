@@ -44,7 +44,7 @@ export  function Listing() {
 
         
 
-        <Header/>
+        
 
 
         <div className='flex flex-col gap-[32px] px-[64px] py-[16px] '>
