@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Header } from './Header';
+
 
 
 export  function Listing() {
@@ -8,6 +8,7 @@ export  function Listing() {
     const [searchMovie, setsearchMovie] = useState("")
     const[type, setType] = useState("movie")
     const[year, setYear] = useState("2024")
+    
 
     const [noMatch, setNoMatch] = useState(false);
 
@@ -15,7 +16,8 @@ export  function Listing() {
 
         if(searchMovie || type || year){
 
-        fetch(`http://www.omdbapi.com/?apikey=7d155e4&t=${searchMovie}&type=${type}&y=${year}`)
+        
+        fetch(`https://www.omdbapi.com/?apikey=7d155e4&t=${searchMovie}&type=${type}&y=${year}`)
         
         .then((res)=> res.json() )
         .then((data)=> {
@@ -29,6 +31,7 @@ export  function Listing() {
                 
                 setNoMatch(false);
                 setLists([data]);
+                
               }
 
             
@@ -37,8 +40,13 @@ export  function Listing() {
         }
         
     },[searchMovie, type, year])
+
+   
+
   return (
     <>
+
+   
 
     <div className='flex flex-col gap-[24px] w-full'>
 
